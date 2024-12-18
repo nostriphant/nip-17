@@ -1,0 +1,35 @@
+{
+    "name": "nostriphant/nip-17",
+    "description": "Nostr NIP-17 implementation in PHP",
+    "type": "library",
+    "require": {
+        "php": "^8.3",
+        "nostriphant/nip-59": "^1.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.35"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "nostriphant\\NIP17\\": "src/",
+            "nostriphant\\NIP17Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rik Meijer",
+            "email": "rik@nostriphant.dev"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": [
+            "./vendor/bin/pest"
+        ]
+    }
+}

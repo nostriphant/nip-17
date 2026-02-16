@@ -5,7 +5,7 @@ namespace nostriphant\NIP17;
 use nostriphant\NIP59\Gift;
 use nostriphant\NIP59\Seal;
 use nostriphant\NIP01\Key;
-use nostriphant\NIP59\Rumor;
+use nostriphant\NIP01\Rumor;
 
 class PrivateDirect {
 

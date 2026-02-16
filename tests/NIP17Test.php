@@ -8,9 +8,9 @@ use nostriphant\NIP59\Seal;
 use nostriphant\NIP17\PrivateDirect;
 
 it('relays private direct messsage from alice to bob', function (): void {
-    $alice_key = \Pest\key_sender();
+    $alice_key = Key::fromHex('a71a415936f2dd70b777e5204c57e0df9a6dffef91b3c78c1aa24e54772e33c3');
 
-    $bob_key = \Pest\key_recipient();
+    $bob_key = Key::fromHex('6eeb5ad99e47115467d096e07c1c9b8b41768ab53465703f78017204adc5b0cc');
     $gift = PrivateDirect::make($alice_key, $bob_key(Key::public()), 'Hello!!');
 
     expect($gift->kind)->toBe(1059);
